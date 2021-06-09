@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+from decouple import config
 from pathlib import Path
 import os
 
@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-q#8-&211p_36bqwl38a9h(##ydcm6c=05jb!q7_m3oxx(h^ylj'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -143,14 +143,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # OR use App password which needs 2 factor authentication. - https://support.google.com/accounts/answer/185833?hl=en
 
 # Email settings
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = '587'
-EMAIL_HOST_USER = 'omkarhcode@gmail.com'
-EMAIL_HOST_PASSWORD = '******'
-EMAIL_USE_TLS = True
-# EMAIL_USE_SSL = False 
-
-
+EMAIL_HOST = config('EMAIL_HOST', default='localhost')
+EMAIL_PORT = config('EMAIL_PORT', default=25, cast=int)
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=False, cast=bool)
 
 
 
