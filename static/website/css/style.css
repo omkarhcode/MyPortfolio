@@ -12180,7 +12180,7 @@ h5,
     left: 0;
     right: 0;
     background: #000000;
-    opacity: 0;
+    opacity: 0.2;
 }
 
 @media (max-width: 1199.98px) {
@@ -12196,7 +12196,7 @@ h5,
     }
 
     .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
-        opacity: .3;
+        opacity: .6;
     }
 
     .owl-carousel.home-slider .slider-item .slider-text .one-third:after {

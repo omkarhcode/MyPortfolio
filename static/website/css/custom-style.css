@@ -7,3 +7,23 @@
     border-color: #ff0000 !important;
     color: #ffffff !important;
 }
+
+
+.slider-item .one-third.img {
+	height:  100% !important;
+}
+
+
+.services-1 img {
+	width: 75px;
+	height: 75px;
+  	-webkit-transition: all 1.5s;
+}
+
+.services-1:hover img {
+	filter: brightness(0);
+}
+
+#contact-section .img {
+	filter: saturate(0);
+}
