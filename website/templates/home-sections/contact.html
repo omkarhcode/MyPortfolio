@@ -50,11 +50,17 @@
             <div class="col-md-6 order-md-last d-flex">
                 <form action="#contact-section" method="post" class="bg-light p-4 p-md-5 contact-form">
                     {% csrf_token %}
+                    {% if your_name %}
+                    <div class="email-confirmation">
+                        <span>Thanks <strong> {{your_name|title}}</strong>,</span>
+                        <p>I received your email and will respond shortly...</p>
+                    </div>
+                    {% endif %}
                     <div class="form-group">
                         <input type="text" name="your-name" class="form-control" placeholder="Your Name">
                     </div>
                     <div class="form-group">
-                        <input type="text" name="your-email" class="form-control" placeholder="Your Email">
+                        <input type="email" name="your-email" class="form-control" placeholder="Your Email">
                     </div>
                     <div class="form-group">
                         <input type="text" name="your-subject" class="form-control" placeholder="Subject">

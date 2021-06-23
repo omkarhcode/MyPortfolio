@@ -13,7 +13,11 @@ def home(request):
 
 		# Send an E-mail
 		# send_mail(subject, message, from_email, recipient_list)
-		send_mail(your_name + your_subject, your_message, your_email, ['omkarh.work@gmail.com', 'omkarh@gmail.com'],)
+		send_mail(" omkarh.info - "+ your_subject,
+			 	"FROM - "+your_name +", EMAIL - "+your_email +", SUBJECT - "+ your_subject+", MESSAGE - "+your_message + " ---Sent from a contact form on omkarh.info---",
+			  	your_email,
+			   	['omkarh.work@gmail.com'],
+			   )
 
 		return render(request, 'home.html' ,{'your_name': your_name})
 	else:

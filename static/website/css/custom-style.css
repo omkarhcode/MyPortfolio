@@ -27,3 +27,7 @@
 #contact-section .img {
 	filter: saturate(0);
 }
+
+.email-confirmation {
+	color:  var(--green);
+}
