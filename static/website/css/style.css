@@ -12127,7 +12127,7 @@ h5,
 
 .owl-carousel.home-slider {
     position: relative;
-    height: 750px;
+    height: 550px;
     z-index: 0;
 }
 
@@ -12135,7 +12135,7 @@ h5,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 750px;
+    height: 550px;
     position: relative;
     z-index: 0;
 }
@@ -12157,7 +12157,7 @@ h5,
 }
 
 .owl-carousel.home-slider .slider-item .slider-text {
-    height: 750px;
+    height: 550px;
     z-index: 0;
 }
 
@@ -12168,9 +12168,11 @@ h5,
 }
 
 .owl-carousel.home-slider .slider-item .slider-text .one-third {
-    width: 60%;
+    width: 80%;
     position: relative;
     z-index: -1;
+    box-shadow: 80px 50px 40px 10px #000000 inset;
+
 }
 
 .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
@@ -12193,6 +12195,8 @@ h5,
     .owl-carousel.home-slider .slider-item .slider-text .one-third {
         width: 100%;
         z-index: 0;
+
+        box-shadow: none;
     }
 
     .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
@@ -12633,6 +12637,7 @@ h5,
     width: 100%;
     position: relative;
     z-index: 1;
+    filter: grayscale(1);
 }
 
 .ftco-about ul.about-info {
