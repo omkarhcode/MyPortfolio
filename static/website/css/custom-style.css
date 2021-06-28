@@ -1,33 +1,44 @@
 .owl-carousel.owl-drag .owl-item {
-	touch-action:  pan-y;
+    touch-action: pan-y;
 }
-#projects-section .filtering .filter-button:hover,
-#projects-section .filtering .filter-button.active {
-	background: #999999 !important;
+
+#projects-section .filtering .filter-button,
+#projects-section .filtering .filter-button {
+    background: #999999 !important;
     border: 1px solid #999999 !important;
     color: #ffffff !important;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
+
+#projects-section .filtering .filter-button:hover,
+#projects-section .filtering .filter-button.active {
+    background: #ffbd39 !important;
+    border: 1px solid #ffbd39 !important;
+    color: #000000 !important;
+}
+
 
 
 .slider-item .one-third.img {
-	height:  100% !important;
+    height: 100% !important;
 }
 
 
 .services-1 img {
-	width: 75px;
-	height: 75px;
-  	-webkit-transition: all 1.5s;
+    width: 75px;
+    height: 75px;
+    -webkit-transition: all 1.5s;
 }
 
 .services-1:hover img {
-	filter: brightness(0);
+    filter: brightness(0);
 }
 
 #contact-section .img {
-	filter: saturate(0);
+    filter: saturate(0);
 }
 
 .email-confirmation {
-	color:  var(--green);
+    color: var(--green);
 }
