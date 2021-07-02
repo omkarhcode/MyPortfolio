@@ -17,7 +17,24 @@
     border: 1px solid #ffbd39 !important;
     color: #000000 !important;
 }
+/* video-container */
 
+.video-container {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* END video-container */
 
 
 .slider-item .one-third.img {
